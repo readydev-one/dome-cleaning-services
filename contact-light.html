@@ -1,0 +1,1143 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>Edmonton Cleaning Services | Dome Cleaning Services| Trusted Local Cleaners.</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.css">
+   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+
+      <style>
+              /* Progress Indicator */
+        .progress-indicator {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .progress-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .progress-step-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            color: #34002b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .progress-step.active .progress-step-number {
+            background: #014edd;
+            color: #34002b;
+        }
+
+        .progress-step.completed .progress-step-number {
+            background: #15d766;
+            color: white;
+        }
+
+        .progress-step-label {
+            font-size: 13px;
+            color: #34002b;
+            font-weight: 500;
+        }
+
+        .progress-step.active .progress-step-label {
+            color: #34002b;
+        }
+
+        .progress-line {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: #34002b;
+            z-index: 0;
+        }
+
+        .progress-line-fill {
+            height: 100%;
+            background: #9527ae;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+            color: #34002b;
+        }
+
+        /* Form Pages */
+        .form-page {
+            display: none;
+        }
+
+        .form-page.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-section-title {
+            font-size: 16px;
+            font-weight: 400;
+            color: #34002b;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #34002b;
+        }
+
+        .tp-input, .tp-textarea, select {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1px solid #34002b;
+            border-radius: 6px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .tp-input:focus, .tp-textarea:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .tp-textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .radio-group, .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        .radio-option, .checkbox-option {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border: 1px solid #34002b;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .radio-option:hover, .checkbox-option:hover {
+            border-color: #3498db;
+            background: #222445;
+            color: #fff;
+        }
+
+        .radio-option input[type="radio"],
+        .checkbox-option input[type="checkbox"] {
+            margin-right: 12px;
+            cursor: pointer;
+            width: 18px;
+            height: 18px;
+        }
+
+        .radio-option label,
+        .checkbox-option label {
+            cursor: pointer;
+            flex: 1;
+            font-size: 15px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .quote-display {
+            /* display:none; */
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #34002b;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .quote-display h3 {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .quote-amount {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .quote-details {
+            font-size: 13px;
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
+        .discount-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: rgb(0, 0, 0);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 8px;
+        }
+
+        /* Buttons */
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .tp-btn-md {
+            background: #014edd;
+            /* color: rgb(0, 0, 0); */
+            border: none;
+            padding: 16px 32px;
+            /* border-radius: 6px; */
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            /* flex: 1; */
+        }
+
+        .tp-btn-md:hover {
+            background: #001cbc;
+            transform: translateY(-2px);
+
+        }
+
+        .tp-btn-md.secondary {
+            background: #34002b;
+        }
+
+        .tp-btn-md.secondary:hover {
+            background: #34002b;
+        }
+
+        .tp-btn-md svg {
+            transition: transform 0.3s ease;
+        }
+
+        .tp-btn-md:hover svg {
+            transform: translateX(4px);
+        }
+
+        .tp-btn-md.secondary:hover svg {
+            transform: translateX(-4px);
+        }
+
+        .tp-input > option {
+         color: #3a0024;
+        }
+
+        /* Summary Section */
+        .summary-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #34002b;
+        }
+
+        .summary-item:last-child {
+            border-bottom: none;
+            font-weight: 600;
+            font-size: 16px;
+            padding-top: 15px;
+        }
+
+        .summary-label {
+            color: #555;
+        }
+
+        .summary-value {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: -15px;
+            margin-bottom: 15px;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+
+        /* Success Page */
+        .success-page {
+            text-align: center;
+            padding: 40px 20px;
+            display: none;
+        }
+
+        .success-page.active {
+            display: block;
+            animation: fadeIn 0.4s ease;
+        }
+
+        /* Success Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 20px;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 40px;
+            position: relative;
+            animation: slideUp 0.4s ease;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #f0f0f0;
+            border: none;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            color: #34002b;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .modal-close:hover {
+            background: #e0e0e0;
+            transform: rotate(90deg);
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #27ae60;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            animation: scaleIn 0.5s ease;
+        }
+
+        @keyframes scaleIn {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .success-icon svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .success-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .success-message {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .success-details {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .success-details h4 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .success-detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .success-detail-item:last-child {
+            border-bottom: none;
+        }
+
+        .success-detail-label {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .success-detail-value {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .success-quote-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .success-quote-highlight .quote-label {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .success-quote-highlight .quote-value {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-amount {
+                font-size: 36px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .progress-step-label {
+                font-size: 11px;
+            }
+
+            .success-title {
+                font-size: 24px;
+            }
+
+            .success-quote-highlight .quote-value {
+                font-size: 28px;
+            }
+
+            .modal-content {
+                padding: 30px 20px;
+            }
+
+            .modal-close {
+                top: 10px;
+                right: 10px;
+            }
+        }
+    
+   </style>
+</head>
+
+<body class="tp-magic-cursor loaded">
+
+   <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+   <![endif]-->
+
+   <!-- loading-area-start -->
+
+   <!-- loading-area-end -->
+
+   <!-- Begin magic cursor -->
+   <div id="magic-cursor" class="cursor-black-bg cursor-bg-green">
+      <div id="ball"></div>
+   </div>
+   <!-- End magic cursor -->
+
+   <!-- backtotop area start -->
+   <div class="scrollToTop scrollToTop-4">
+      <div class="arrowUp">
+         <i class="fa-light fa-arrow-up"></i>
+      </div>
+      <div class="water">
+         <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+            <use xlink:href="#wave"></use>
+         </svg>
+         <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+            <use xlink:href="#wave"></use>
+         </svg>
+         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 560 20" style="display: none;">
+            <symbol id="wave">
+               <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z" fill="#"></path>
+               <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z" fill="#"></path>
+               <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z" fill="#"></path>
+               <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z" fill="#"></path>
+            </symbol>
+         </svg>
+      </div>
+   </div>
+   <!-- backtotop area end -->
+
+   <!--search-form-start -->
+   <div class="tp-search-body-overlay"></div>
+   <div class="tp-search-form-toggle">
+      <div class="container">
+         <div class="row mb-70">
+            <div class="col-lg-12">
+               <div class="tp-search-top d-flex justify-content-between align-items-center">
+                  <div class="cm-search-logo">
+                     <a href="index.html"><img data-width="40" src="assets/img/logo/logo.svg" alt="logo"></a>
+                  </div>
+                  <button class="tp-search-close">
+                     <i class="fa-light fa-xmark"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="row justify-content-center">
+            <div class="col-lg-12">
+               <div class="tp-search-form">
+                  <form action="#">
+                     <div class="tp-search-form-input">
+                        <input type="text" placeholder="What are you looking foor?" required>
+                        <span class="tp-search-focus-border"></span>
+                        <button class="tp-search-form-icon" type="submit">
+                           <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- search-form-end -->
+
+   <!-- tp-offcanvus-area-start -->
+   <div class="tp-offcanvas-area">
+      <div class="tp-offcanvas">
+         <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
+            <div class="tp-offcanvas-logo">
+               <a href="index.html">
+                  <img data-width="60" src="assets/img/logo/logo.svg" alt="logo">
+               </a>
+            </div>
+            <div class="tp-offcanvas-close-btn">
+               <button class="close-btn">
+                  <svg width="37" height="38" viewBox="0 0 37 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M9.19141 9.80762L27.5762 28.1924" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                     <path d="M9.19141 28.1924L27.5762 9.80761" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <!-- <div class="tp-offcanvas-content d-none d-xl-block">
+            <h3 class="tp-offcanvas-title">Hello There!</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+         </div> -->
+         <div class="tp-offcanvas-menu d-xl-none">
+            <nav style="text-decoration: underline;"></nav>
+                <ul style="margin-top: 40px; background: #fff0f9; padding: 8px; border-radius: 16px;">
+                     <li style="text-decoration: underline;">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M13.3 14C11.9111 14 10.5389 13.6972 9.18333 13.0917C7.82778 12.4861 6.59444 11.6278 5.48333 10.5167C4.37222 9.40556 3.51389 8.17222 2.90833 6.81667C2.30278 5.46111 2 4.08889 2 2.7C2 2.5 2.06667 2.33333 2.2 2.2C2.33333 2.06667 2.5 2 2.7 2H5.4C5.55556 2 5.69444 2.05278 5.81667 2.15833C5.93889 2.26389 6.01111 2.38889 6.03333 2.53333L6.46667 4.86667C6.48889 5.04444 6.48333 5.19444 6.45 5.31667C6.41667 5.43889 6.35556 5.54444 6.26667 5.63333L4.65 7.26667C4.87222 7.67778 5.13611 8.075 5.44167 8.45833C5.74722 8.84167 6.08333 9.21111 6.45 9.56667C6.79444 9.91111 7.15556 10.2306 7.53333 10.525C7.91111 10.8194 8.31111 11.0889 8.73333 11.3333L10.3 9.76667C10.4 9.66667 10.5306 9.59167 10.6917 9.54167C10.8528 9.49167 11.0111 9.47778 11.1667 9.5L13.4667 9.96667C13.6222 10.0111 13.75 10.0917 13.85 10.2083C13.95 10.325 14 10.4556 14 10.6V13.3C14 13.5 13.9333 13.6667 13.8 13.8C13.6667 13.9333 13.5 14 13.3 14ZM4.01667 6L5.11667 4.9L4.83333 3.33333H3.35C3.40556 3.78889 3.48333 4.23889 3.58333 4.68333C3.68333 5.12778 3.82778 5.56667 4.01667 6ZM9.98333 11.9667C10.4167 12.1556 10.8583 12.3056 11.3083 12.4167C11.7583 12.5278 12.2111 12.6 12.6667 12.6333V11.1667L11.1 10.85L9.98333 11.9667Z" fill="currentColor" />
+                        </svg>
+                        Call us: <a href="tel:+1(780)222-7124">+1(780)222-7124</a></li>
+                     <li style="text-decoration: underline;">
+                        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M5.71249 6.71613L1 4.44814C4.42407 2.73796 8.14419 1.57183 12 1C11.3711 4.50526 10.0885 7.88719 8.2076 11L5.71249 6.71613ZM5.71249 6.71613L8.75778 3.94758" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Send email: <a href="mailto:info@domecleaningservices.com">info@domecleaningservices.com</a></li>
+                  </ul>
+         </div>
+         <!-- <div class="tp-offcanvas-gallery d-none d-xl-block">
+            <div class="row gx-2">
+               <div class="col-md-3 col-3">
+                  <div class="tp-offcanvas-gallery-img fix">
+                     <a class="popup-image" href="assets/img/offcanvas/offcanvas-1.jpg"><img src="assets/img/offcanvas/offcanvas-1.jpg" alt=""></a>
+                  </div>
+               </div>
+               <div class="col-md-3 col-3">
+                  <div class="tp-offcanvas-gallery-img fix">
+                     <a class="popup-image" href="assets/img/offcanvas/offcanvas-2.jpg"><img src="assets/img/offcanvas/offcanvas-2.jpg" alt=""></a>
+                  </div>
+               </div>
+               <div class="col-md-3 col-3">
+                  <div class="tp-offcanvas-gallery-img fix">
+                     <a class="popup-image" href="assets/img/offcanvas/offcanvas-3.jpg"><img src="assets/img/offcanvas/offcanvas-3.jpg" alt=""></a>
+                  </div>
+               </div>
+               <div class="col-md-3 col-3">
+                  <div class="tp-offcanvas-gallery-img fix">
+                     <a class="popup-image" href="assets/img/offcanvas/offcanvas-4.jpg"><img src="assets/img/offcanvas/offcanvas-4.jpg" alt=""></a>
+                  </div>
+               </div>
+            </div>
+         </div> -->
+         <!-- <div class="tp-offcanvas-contact">
+            <h3 class="tp-offcanvas-title sm">Information</h3>
+            <ul>
+               <li><a href="tel:1245654">+ 4 20 7700 1007</a></li>
+               <li><a href="mailto:hello@aleric.com">hello@aleric.com</a></li>
+               <li><a href="#">Avenue de Roma 158b, Lisboa</a></li>
+            </ul>
+         </div> -->
+
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- tp-offcanvus-area-end -->
+
+   <header>
+
+      <!-- tp-header-area-start -->
+      <div id="header-sticky" class="tp-header-area pre-header tp-header-md-wrap sticky-white-bg tp-header-blur header-transparent" style="background: rgba(255, 242, 217, 0.4);  backdrop-filter: blur(8px);">
+         <div class="tp-header-md-top tp-bg-common-black-5 d-none d-lg-block">
+            <div class="container-fluid container-1824">
+               <div class="row">
+                  <div class="col-lg-3">
+                     <div class="tp-header-md-social">
+                        <ul>
+                           <li>
+                              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                           </li>
+                           <!-- <li>
+                              <a href="#">
+                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.60319 6.77491L15.4315 0H14.0504L8.98966 5.88256L4.94769 0H0.285767L6.39801 8.89547L0.285767 16H1.66696L7.01119 9.78782L11.2798 16H15.9417L9.60285 6.77491H9.60319ZM7.71145 8.97384L7.09216 8.08805L2.16463 1.03974H4.28606L8.26263 6.72795L8.88193 7.61374L14.051 15.0075H11.9296L7.71145 8.97418V8.97384Z" fill="currentColor" />
+                                 </svg>
+                              </a>
+                           </li> -->
+                           <!-- <li>
+                              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                           </li> -->
+                           <li>
+                              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-9">
+                     <div class="tp-header-md-contact">
+                        <ul>
+                           <li>
+                              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M13.3 14C11.9111 14 10.5389 13.6972 9.18333 13.0917C7.82778 12.4861 6.59444 11.6278 5.48333 10.5167C4.37222 9.40556 3.51389 8.17222 2.90833 6.81667C2.30278 5.46111 2 4.08889 2 2.7C2 2.5 2.06667 2.33333 2.2 2.2C2.33333 2.06667 2.5 2 2.7 2H5.4C5.55556 2 5.69444 2.05278 5.81667 2.15833C5.93889 2.26389 6.01111 2.38889 6.03333 2.53333L6.46667 4.86667C6.48889 5.04444 6.48333 5.19444 6.45 5.31667C6.41667 5.43889 6.35556 5.54444 6.26667 5.63333L4.65 7.26667C4.87222 7.67778 5.13611 8.075 5.44167 8.45833C5.74722 8.84167 6.08333 9.21111 6.45 9.56667C6.79444 9.91111 7.15556 10.2306 7.53333 10.525C7.91111 10.8194 8.31111 11.0889 8.73333 11.3333L10.3 9.76667C10.4 9.66667 10.5306 9.59167 10.6917 9.54167C10.8528 9.49167 11.0111 9.47778 11.1667 9.5L13.4667 9.96667C13.6222 10.0111 13.75 10.0917 13.85 10.2083C13.95 10.325 14 10.4556 14 10.6V13.3C14 13.5 13.9333 13.6667 13.8 13.8C13.6667 13.9333 13.5 14 13.3 14ZM4.01667 6L5.11667 4.9L4.83333 3.33333H3.35C3.40556 3.78889 3.48333 4.23889 3.58333 4.68333C3.68333 5.12778 3.82778 5.56667 4.01667 6ZM9.98333 11.9667C10.4167 12.1556 10.8583 12.3056 11.3083 12.4167C11.7583 12.5278 12.2111 12.6 12.6667 12.6333V11.1667L11.1 10.85L9.98333 11.9667Z" fill="currentColor" />
+                              </svg>
+                              Call us: <a href="tel:+1(780)222-7124">+1(780)222-7124</a></li>
+                           <li>
+                              <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M5.71249 6.71613L1 4.44814C4.42407 2.73796 8.14419 1.57183 12 1C11.3711 4.50526 10.0885 7.88719 8.2076 11L5.71249 6.71613ZM5.71249 6.71613L8.75778 3.94758" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                              Send email: <a href="mailto:info@domecleaningservices.com">info@domecleaningservices.com</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tp-header-md-main">
+            <div class="container-fluid container-1824">
+               <div class="row align-items-center">
+                  <div class="col-xxl-2 col-xl-2 col-6">
+                     <div class="tp-header-logo">
+                        <a href="index.html"><img data-width="60" src="assets/img/logo/logo.svg" alt="logo"></a>
+                     </div>
+                  </div>
+                  <div class="col-xxl-6 col-xl-7 d-none d-xl-block">
+                     <div class="tp-main-menu tp-main-menu-ai tp-main-menu-md tp-header-dropdown dropdown-white-bg">
+                        <nav class="tp-mobile-menu-active">
+                        <ul>
+                           <li class=" p-inherit">
+                              <a href="index.html">Home 
+
+                              </a>
+
+                           </li>
+                           
+                           <li class="has-dropdown p-inherit">
+                              <a href="#">Services 
+                                 <span>
+                                    <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M2.7 4.93333L0.2 1.6C-0.294427 0.940764 0.175955 0 1 0H6C6.82405 0 7.29443 0.940764 6.8 1.6L4.3 4.93333C3.9 5.46667 3.1 5.46667 2.7 4.93333Z" fill="currentColor" />
+                                    </svg>
+                                 </span>
+                              </a>
+                              <ul class="tp-submenu submenu">
+                                 <li><a href="services-page-residential.html">Residential Cleaning</a></li>
+                                 <li><a href="services-page-commercial.html">Commercial Cleaning</a></li>
+                                 <li><a href="services-page-home-organization.html">Home Organization</a></li>
+                                 <li><a href="services-page-industrial.html">Industrial Cleaning</a></li>
+                              </ul>
+                           </li>
+                           <!-- <li class="">
+                              <a href="blog-details-light.html">Blog
+
+                              </a>
+
+                           </li> -->
+                           <li class="">
+                              <a href="contact-light.html">Contact
+
+                              </a>
+
+                           </li>
+                        </ul>
+                     </nav>
+                     </div>
+                  </div>
+                  <div class="col-xxl-4 col-xl-3 col-6">
+                     <div class="tp-header-right d-flex align-items-center justify-content-end">
+                        <div class="tp-header-search">
+                           <button class="tp-header-search-btn tp-header-md-search-btn tp-search-click mx-8" style="border: none; width: 100%; border-radius: 32px;">
+                              <span class="underline-white px-4 fw-600 "> Book Online</span>
+                           </button>
+                        </div>
+                        <div class="tp-header-btn d-none d-sm-inline-block ml-10" >
+                           <a href="contact-light.html" class="tp-btn-md tp-btn-md-header tp-bg-theme-1 tp-left-right p-relative hover-text-white d-inline-block text-uppercase tp-text-grey-5 lh-1 fs-15 fw-800 tp-ff-dm"
+                            style="background: #97005d;">
+                              <span class="mr10 td-text d-inline-block mr-5" >Get Quote</span>
+                              <span class="tp-arrow-angle">
+                                 <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11L12 1M12 1H3.44444M12 1V8.77778" stroke="#F3F1F2" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M1 11L12 1M12 1H3.44444M12 1V8.77778" stroke="#F3F1F2" stroke-width="1.5" stroke-linecap="round" />
+                                 </svg>
+                              </span>
+                           </a>
+                        </div>
+                        <button class="tp-menu-bar tp-header-sidebar-btn ml-20  d-xl-none">
+                           <span></span>
+                           <span></span>
+                           <span></span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-header-area-end -->
+
+   </header>
+   <div id="smooth-wrapper" style="background: #fff7e8;">
+      <div id="smooth-content">
+         <main>
+
+            <!-- tp-contact-area-start -->
+            <div class="tp-contact-area pre-header tp-contact-spacing pb-140">
+               <div class="container containers">
+                  <div class="row justify-content-center">
+                     <div class="col-lg-8">
+                        <div class="tp-contact-wrap">
+                           <div class="text-center mb-60">
+                              <h2 class="tp-section-title fs-70 fs-xl-60 fs-lg-50 fs-xs-40 mb-10" style="color: #34002b;">Fill Form Below to Get A Free Quote</h2>
+                              <p class="fs-18 lh-150-per">Have a any questions? Please call or e-mail:</p>
+                           </div>
+                           <div class="tp-contact-number mb-70">
+                              <div class="d-flex align-items-center mb-15 mr-20">
+                                 <span class="tp-contact-icon mr-15">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <g clip-path="url(#clip0_863_33)">
+                                          <path d="M5.83174 11.7413V14.8333C5.83225 14.9384 5.86581 15.0407 5.92767 15.1256C5.98953 15.2106 6.07655 15.2739 6.1764 15.3066C6.27625 15.3394 6.38388 15.3399 6.48403 15.3081C6.58418 15.2762 6.67177 15.2137 6.73441 15.1293L8.54308 12.668L5.83174 11.7413ZM15.7884 0.0926552C15.7133 0.0391576 15.6248 0.00748045 15.5328 0.001127C15.4408 -0.00522644 15.3488 0.0139914 15.2671 0.0566552L0.267077 7.88999C0.180772 7.9356 0.109661 8.00542 0.0624712 8.09087C0.0152814 8.17633 -0.00593423 8.2737 0.00142817 8.37104C0.00879056 8.46838 0.0444106 8.56145 0.103917 8.63883C0.163423 8.71622 0.244227 8.77454 0.336411 8.80666L4.50641 10.232L13.3871 2.63866L6.51508 10.918L13.5037 13.3067C13.5731 13.33 13.6467 13.3378 13.7194 13.3297C13.7921 13.3216 13.8622 13.2976 13.9246 13.2596C13.9871 13.2216 14.0405 13.1703 14.0812 13.1095C14.1218 13.0486 14.1486 12.9796 14.1597 12.9073L15.9931 0.573989C16.0066 0.482688 15.9947 0.389414 15.9586 0.304471C15.9225 0.219528 15.8636 0.146223 15.7884 0.0926552Z" fill="#030303" />
+                                       </g>
+                                       <defs>
+                                          <clipPath id="clip0_863_33">
+                                             <rect width="16" height="16" fill="white" />
+                                          </clipPath>
+                                       </defs>
+                                    </svg>
+                                 </span>
+                                 <a class="tp-contact-email" href="mailto:info@domecleaningservices.com">info@domecleaningservices.com</a>
+                              </div>
+                              <div class="d-flex align-items-center mb-15">
+                                 <span class="tp-contact-icon mr-15">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path d="M15.5633 11.7424L13.3305 9.50954C12.5331 8.71209 11.1774 9.0311 10.8584 10.0678C10.6192 10.7855 9.82174 11.1842 9.10404 11.0247C7.50915 10.626 5.35604 8.5526 4.95732 6.87797C4.71809 6.16024 5.19656 5.36279 5.91426 5.12359C6.95094 4.80461 7.26991 3.44895 6.47247 2.65151L4.23962 0.418659C3.60166 -0.139553 2.64473 -0.139553 2.08652 0.418659L0.57137 1.93381C-0.943776 3.5287 0.73086 7.75516 4.47885 11.5032C8.22685 15.2511 12.4533 17.0056 14.0482 15.4106L15.5633 13.8955C16.1216 13.2575 16.1216 12.3006 15.5633 11.7424Z" fill="#030303" />
+                                    </svg>
+                                 </span>
+                                 <a class="tp-contact-email" href="tel:+1(780)-222-7124">+1(780)-222-7124</a>
+                              </div>
+                           </div>
+                       <div class="container" style="background: #fff0f8; border: 1px solid #001cbc; border-radius: 32px; padding: 60px; box-shadow: 0 0 0 4px;">
+                           <!-- Progress Indicator -->
+                           <div class="progress-indicator">
+                                 <div class="progress-line">
+                                    <div class="progress-line-fill" id="progressFill"></div>
+                                 </div>
+                                 <div class="progress-step active" id="step1Indicator">
+                                    <div class="progress-step-number">1</div>
+                                    <div class="progress-step-label">Service & Property</div>
+                                 </div>
+                                 <div class="progress-step" id="step2Indicator">
+                                    <div class="progress-step-number">2</div>
+                                    <div class="progress-step-label">Frequency & Add-ons</div>
+                                 </div>
+                                 <div class="progress-step" id="step3Indicator">
+                                    <div class="progress-step-number">3</div>
+                                    <div class="progress-step-label">Contact Info</div>
+                                 </div>
+                           </div>
+
+                           <form id="quoteForm">
+                                 <!-- PAGE 1: Service Type & Property Details -->
+                                 <div class="form-page active" id="page1">
+                                    <h5>Let's start with your service type and property details.</h5>
+
+                                    <!-- Service Type -->
+                                    <div class="form-section">
+                                       <div class="form-section-title">Select Service Type*</div>
+                                       <div class="radio-group" style="color: #34002b;">
+                                             <div class="radio-option">
+                                                <input type="radio" id="standard" name="serviceType" value="standard" checked required>
+                                                <label for="standard">Standard Cleaning - Deep clean for regular maintenance</label>
+                                             </div>
+                                             <div class="radio-option">
+                                                <input type="radio" id="deep" name="serviceType" value="deep" required>
+                                                <label for="deep">Deep Cleaning - Intensive cleaning of all areas</label>
+                                             </div>
+                                             <div class="radio-option">
+                                                <input type="radio" id="moveInOut" name="serviceType" value="moveInOut" required>
+                                                <label for="moveInOut">Move-in/Move-out - Complete property cleaning</label>
+                                             </div>
+                                             <div class="radio-option" >
+                                                <input type="radio" id="office" name="serviceType" value="office" disabled>
+                                                <label for="office">Office Cleaning -  (Please Call or Email.)</label>
+                                             </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- Property Details -->
+                                    <div class="form-section">
+                                       <div class="form-section-title">Property Details*</div>
+                                       <div class="form-row">
+                                             <select class="tp-input" id="bedrooms"  required>
+                                                <option value="">Bedrooms*</option>
+                                                <option value="0">Studio</option>
+                                                <option value="1">1 Bedroom</option>
+                                                <option value="2">2 Bedrooms</option>
+                                                <option value="3">3 Bedrooms</option>
+                                                <option value="4">4 Bedrooms</option>
+                                                <option value="5">5+ Bedrooms</option>
+                                             </select>
+                                             <select class="tp-input" id="bathrooms" required>
+                                                <option value="">Bathrooms*</option>
+                                                <option value="1">1 Bathroom</option>
+                                                <option value="1.5">1.5 Bathrooms</option>
+                                                <option value="2">2 Bathrooms</option>
+                                                <option value="2.5">2.5 Bathrooms</option>
+                                                <option value="3">3 Bathrooms</option>
+                                                <option value="4">4+ Bathrooms</option>
+                                             </select>
+                                       </div>
+                                       <input class="tp-input" type="text" id="sqft" placeholder="Square Footage (Optional)">
+                                       <div class="error-message" id="page1Error">Please select both bedrooms and bathrooms to continue.</div>
+                                    </div>
+
+                                    <div class="button-group">
+                                       <button type="button" class="tp-btn-md" id="page1NextBtn" style="color: #f0f0f0;">
+                                             <span>Continue</span>
+                                             <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 11L12 1M12 1H3.44444M12 1V8.77778" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                             </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+
+                                 <!-- PAGE 2: Frequency & Add-ons -->
+                                 <div class="form-page" id="page2">
+                                    <h5>Choose your cleaning frequency and any additional services.</h5>
+
+                                    <!-- Frequency -->
+                                    <div class="form-section">
+                                       <div class="form-section-title">Cleaning Frequency*</div>
+                                       <div class="radio-group" style="color: #34002b;">
+                                             <div class="radio-option" >
+                                                <input type="radio" id="oneTime" name="frequency" value="oneTime" checked required>
+                                                <label for="oneTime">One-time Service</label>
+                                             </div>
+                                             <div class="radio-option" >
+                                                <input type="radio" id="weekly" name="frequency" value="weekly" required>
+                                                <label for="weekly">Weekly <span class="discount-badge" style="border-radius: 16px; color: #eeeeee;">15% OFF</span></label>
+                                             </div>
+                                             <div class="radio-option" >
+                                                <input type="radio" id="biweekly" name="frequency" value="biweekly" required>
+                                                <label for="biweekly">Bi-weekly <span class="discount-badge" style="border-radius: 16px; color: #eeeeee;">10% OFF</span></label>
+                                             </div>
+                                             <div class="radio-option" >
+                                                <input type="radio" id="monthly" name="frequency" value="monthly" required>
+                                                <label for="monthly">Monthly <span class="discount-badge" style="border-radius: 16px; color: #eeeeee;">5% OFF</span></label>
+                                             </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- Add-ons -->
+                                    <div class="form-section">
+                                       <div class="form-section-title">Optional Add-ons</div>
+                                       <div class="checkbox-group" style="color: #34002b">
+                                             <div class="checkbox-option">
+                                                <input type="checkbox" id="windows" value="65">
+                                                <label for="windows">Window Cleaning </label>
+                                             </div>
+                                             <div class="checkbox-option">
+                                                <input type="checkbox" id="carpet" value="75">
+                                                <label for="carpet">Carpet Cleaning </label>
+                                             </div>
+                                             <div class="checkbox-option">
+                                                <input type="checkbox" id="carpet" value="150">
+                                                <label for="carpet">Top to Bottom Wall Cleaning </label>
+                                             </div>
+                                             <div class="checkbox-option">
+                                                <input type="checkbox" id="appliances" value="80">
+                                                <label for="appliances">Appliance Deep Clean </label>
+                                             </div>
+                                             <div class="checkbox-option">
+                                                <input type="checkbox" id="laundry" value="40">
+                                                <label for="laundry">Laundry Service </label>
+                                             </div>
+                                             <div class="checkbox-option">
+                                                <input type="checkbox" id="organizing" value="500">
+                                                <label for="organizing"> Home Organization Service </label>
+                                             </div>
+                                       </div>
+                                    </div>
+
+                                    <!-- Quote Display -->
+                                    <div class="quote-display" style="opacity: 0;">
+                                       <h3>Your Current Quote</h3>
+                                       <div class="quote-amount" id="quoteAmount" style="font-family: Poppins;">$0</div>
+                                       <div class="quote-details" id="quoteDetails">Select your options above to calculate</div>
+                                    </div>
+
+                                    <div class="button-group">
+                                       <button type="button" class="tp-btn-md secondary" id="page2BackBtn">
+                                             <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                                                <path d="M1 11L12 1M12 1H3.44444M12 1V8.77778" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                             </svg>
+                                             <span>Back</span>
+                                       </button>
+                                       <button type="button" class="tp-btn-md" id="page2NextBtn">
+                                             <span>Continue</span>
+                                             <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 11L12 1M12 1H3.44444M12 1V8.77778" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                             </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+
+                                 <!-- PAGE 3: Contact Information -->
+                                 <div class="form-page" id="page3">
+                                    <h5>Almost done! Enter your contact information to receive your quote.</h5>
+
+                                    <!-- Quote Summary -->
+                                    <div class="summary-section">
+                                       <h3 style="margin-bottom: 15px; color: #2c3e50; font-size: 18px;">Quote Summary</h3>
+                                       <div class="summary-item">
+                                             <span class="summary-label">Service Type:</span>
+                                             <span class="summary-value" id="summaryService">-</span>
+                                       </div>
+                                       <div class="summary-item">
+                                             <span class="summary-label">Property:</span>
+                                             <span class="summary-value" id="summaryProperty">-</span>
+                                       </div>
+                                       <div class="summary-item">
+                                             <span class="summary-label">Frequency:</span>
+                                             <span class="summary-value" id="summaryFrequency">-</span>
+                                       </div>
+                                       <div class="summary-item" id="summaryAddonsRow" style="display: none;">
+                                             <span class="summary-label">Add-ons:</span>
+                                             <span class="summary-value" id="summaryAddons">-</span>
+                                       </div>
+                                       <div class="summary-item" style="opacity: 0;">
+                                             <span class="summary-label">Total Quote:</span>
+                                             <span class="summary-value" id="summaryTotal" style="color: #3498db; font-size: 20px;">$0</span>
+                                       </div>
+                                    </div>
+
+                                    <!-- Contact Information -->
+                                    <div class="form-section">
+                                       <div class="form-section-title">Contact Information</div>
+                                       <input class="tp-input" type="text" id="fullName" placeholder="Full Name*" required>
+                                       <input class="tp-input" type="email" id="email" placeholder="Email Address*" required>
+                                       <input class="tp-input" type="tel" id="phone" placeholder="Phone Number*" required>
+                                       <input class="tp-input" type="text" id="address" placeholder="Service Address*" required>
+                                       <input class="tp-input" type="text" id="hearAbout" placeholder="How did you hear about us?">
+                                    </div>
+
+                                    <!-- Additional Notes -->
+                                    <div class="form-section">
+                                       <textarea class="tp-input tp-textarea" id="notes" placeholder="Tell us a bit about the job... (Any special requirements or areas of focus?)"></textarea>
+                                    </div>
+
+                                    <div class="button-group">
+                                       <button type="button" class="tp-btn-md secondary" id="page3BackBtn">
+                                             <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg);">
+                                                <path d="M1 11L12 1M12 1H3.44444M12 1V8.77778" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                             </svg>
+                                             <span>Back</span>
+                                       </button>
+                                       <button type="submit" class="tp-btn-md">
+                                             <span>Get Your Free Quote</span>
+                                             <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 11L12 1M12 1H3.44444M12 1V8.77778" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                                             </svg>
+                                       </button>
+                                    </div>
+                                 </div>
+                           </form>
+                        </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- tp-contact-area-end -->
+
+
+
+      </div>
+   </div>
+
+
+   <!-- JS here -->
+   <script src="assets/js/vendor/jquery.js" defer></script>
+   <script src="assets/js/bootstrap-bundle.js" defer></script>
+   <script src="assets/js/plugin.js" defer></script>
+   <script src="assets/js/three.js" defer></script>
+   <script src="assets/js/hover-effect.umd.js" defer></script>
+   <script src="assets/js/split-type.js" defer></script>
+   <script src="assets/js/swiper-bundle.js" defer></script>
+   <script src="assets/js/swiper-gl.js" defer></script>
+   <script src="assets/js/effect-slicer.js" defer></script>
+   <script src="assets/js/magnific-popup.js" defer></script>
+   <script src="assets/js/nice-select.js" defer></script>
+   <script src="assets/js/purecounter.js" defer></script>
+   <script src="assets/js/isotope-pkgd.js" defer></script>
+   <script src="assets/js/imagesloaded-pkgd.js" defer></script>
+   <script src="assets/js/atropos.js" defer></script>
+   <script src="assets/js/backtop.js" defer></script>
+   <script src="assets/js/ajax-form.js" defer></script>
+   <script src="assets/js/slider-init.js" defer></script>
+   <script src="assets/js/main.js" defer></script>
+   <script src="assets/js/tp-cursor.js" defer></script>
+   <script src="assets/js/quote.js" defer></script>
+</body>
+
+</html>
+
+
