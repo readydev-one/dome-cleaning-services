@@ -207,13 +207,15 @@
             padding-bottom: 8px;
             border-bottom: 2px solid #e8f4f8;
         }
+        
+
 
         .tp-input, .tp-textarea, select {
             width: 100%;
-            padding: 14px 18px;
+            padding: 4px 4px;
             border: 1px solid #e0e0e0;
             border-radius: 6px;
-            font-size: 15px;
+            font-size: 14px;
             font-family: inherit;
             transition: all 0.3s ease;
             margin-bottom: 20px;
@@ -589,7 +591,7 @@
 
         @media (max-width: 600px) {
             .container {
-                padding: 25px;
+                padding: 4px;
             }
 
             .form-row {
@@ -624,7 +626,29 @@
                 top: 10px;
                 right: 10px;
             }
+
         }
+
+    .tp-input {
+      display: inline-block;
+
+      background-image: url('data:image/svg+xml,<svg fill="%23999" height="10" viewBox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M0 0l5 6 5-6z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 12px center;
+      background-size: 10px;
+      padding-right: 30px; /* space for arrow */
+  }
+
+
+    .tp-input option[value=""] {
+      display: none;
+  }
+
+  .tp-input:valid {
+    color: #999999; /* placeholder color */
+    font-size: 8px;
+
+}
 
   .has-dropdown > a{
     color: #3a0024 !important;

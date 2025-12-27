@@ -1,9 +1,9 @@
         // Pricing Structure
         const pricing = {
             serviceTypes: {
-                standard: { base: 150, perBedroom: 15, perBathroom: 15, name: 'Standard Cleaning' },
-                deep: { base: 180, perBedroom: 35, perBathroom: 25, name: 'Deep Cleaning' },
-                moveInOut: { base: 220, perBedroom: 45, perBathroom: 30, name: 'Move-in/Move-out' },
+                standard: { base: 120, perBedroom: 20, perBathroom: 20, name: 'Standard Cleaning' },
+                deep: { base: 170, perBedroom: 35, perBathroom: 35, name: 'Deep Cleaning' },
+                moveInOut: { base: 150, perBedroom: 35, perBathroom: 35, name: 'Move-in/Move-out' },
                //  office: { base: 150, perBedroom: 25, perBathroom: 20, name: 'Office Cleaning' }
             },
             frequencyDiscounts: {
