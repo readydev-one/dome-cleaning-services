@@ -1,3 +1,5 @@
+        emailjs.init('dKBLEA2E9qbiFUgNl');
+        
         // Pricing Structure
         const pricing = {
             serviceTypes: {
