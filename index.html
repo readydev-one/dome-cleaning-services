@@ -12,25 +12,57 @@
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
    <script type="application/ld+json">
+   {
+   "@context": "https://schema.org",
+   "@type": "CleaningService",
+   "@id": "https://www.domecleaningservices.com/#business",
+   "name": "Dome Cleaning Services",
+   "url": "https://www.domecleaningservices.com",
+   "telephone": "+1-780-222-7124",
+   "priceRange": "$$",
+   "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Edmonton",
+      "addressRegion": "AB",
+      "addressCountry": "CA"
+   },
+   "areaServed": [
       {
-      "@context": "https://schema.org",
-      "@type": "CleaningService",
-      "name": "Dome Cleaning Services",
-      "areaServed": {
-         "@type": "AdministrativeArea",
-         "name": "Edmonton, AB"
+         "@type": "City",
+         "name": "Edmonton"
       },
-      "address": {
-         "@type": "PostalAddress",
-         "addressLocality": "Edmonton",
-         "addressRegion": "AB",
-         "addressCountry": "CA"
+      {
+         "@type": "City",
+         "name": "St. Albert"
       },
-      "telephone": "+1-780-222-7124",
-      "url": "https://www.domecleaningservices.com"
+      {
+         "@type": "City",
+         "name": "Sherwood Park"
+      },
+      {
+         "@type": "City",
+         "name": "Leduc"
+      },
+      {
+         "@type": "City",
+         "name": "Stony Plain"
+      },
+      {
+         "@type": "City",
+         "name": "Beaumont"
+      },
+      {
+         "@type": "City",
+         "name": "Fort Saskatchewan"
       }
-</script>
+   ],
+   "sameAs": [
+      "https://www.google.com/maps?cid=YOUR_GBP_CID"
+   ]
+   }
+   </script>
 
    <!-- Place favicon.ico in the root directory -->
    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.svg">
@@ -221,26 +253,26 @@
             <div class="container-fluid container-1824">
                <div class="row">
                   <div class="col-lg-3">
-                     <div class="tp-header-md-social">
+                     <!-- <div class="tp-header-md-social">
                         <ul>
                            <li>
                               <a href="#"><i class="fa-brands fa-facebook"></i></a>
                            </li>
-                           <!-- <li>
+                           <li>
                               <a href="#">
                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.60319 6.77491L15.4315 0H14.0504L8.98966 5.88256L4.94769 0H0.285767L6.39801 8.89547L0.285767 16H1.66696L7.01119 9.78782L11.2798 16H15.9417L9.60285 6.77491H9.60319ZM7.71145 8.97384L7.09216 8.08805L2.16463 1.03974H4.28606L8.26263 6.72795L8.88193 7.61374L14.051 15.0075H11.9296L7.71145 8.97418V8.97384Z" fill="currentColor" />
                                  </svg>
                               </a>
-                           </li> -->
-                           <!-- <li>
+                           </li>
+                           <li>
                               <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                           </li> -->
+                           </li>
                            <li>
                               <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                            </li>
                         </ul>
-                     </div>
+                     </div> -->
                   </div>
                   <div class="col-lg-9">
                      <div class="tp-header-md-contact">
@@ -274,14 +306,14 @@
                         <nav class="tp-mobile-menu-active">
                         <ul>
                            <li class="has-dropdown p-inherit">
-                              <a href="#">Home 
+                              <a href="index.html">Home 
 
                               </a>
 
                            </li>
                            
                            <li class="has-dropdown p-inherit">
-                              <a href="#">Services 
+                              <a href="">Services 
                                  <span>
                                     <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                                        <path d="M2.7 4.93333L0.2 1.6C-0.294427 0.940764 0.175955 0 1 0H6C6.82405 0 7.29443 0.940764 6.8 1.6L4.3 4.93333C3.9 5.46667 3.1 5.46667 2.7 4.93333Z" fill="currentColor" />
@@ -289,10 +321,10 @@
                                  </span>
                               </a>
                               <ul class="tp-submenu submenu" >
-                                 <li><a href="services-page-residential.html">Residential Cleaning</a></li>
-                                 <li><a href="services-page-commercial.html">Commercial Cleaning</a></li>
-                                 <li><a href="services-page-home-organization.html">Home Organization</a></li>
-                                 <li><a href="services-page-industrial.html">Industrial Cleaning</a></li>
+                                 <li><a href="services/residential-cleaning.html">Residential Cleaning</a></li>
+                                 <li><a href="services/commercial-cleaning.html">Commercial Cleaning</a></li>
+                                 <li><a href="services/home-organization.html">Home Organization</a></li>
+                                 <li><a href="services/post-construction-cleaning.html">Post-Construction Cleaning</a></li>
                               </ul>
                            </li>
                            <!-- <li class="has-dropdown">
@@ -302,7 +334,7 @@
 
                            </li> -->
                            <li class="">
-                              <a href="contact-light.html">Contact
+                              <a href="contact-us.html">Contact
 
                               </a>
 
@@ -325,7 +357,7 @@
                            </button>
                         </div> -->
                         <div class="tp-header-btn d-none d-sm-inline-block ml-10" >
-                           <a href="contact-light.html" class="tp-btn-md tp-btn-md-header tp-bg-theme-1 tp-left-right p-relative hover-text-white d-inline-block text-uppercase tp-text-grey-5 lh-1 fs-15 fw-800 tp-ff-dm"
+                           <a href="contact-us.html" class="tp-btn-md tp-btn-md-header tp-bg-theme-1 tp-left-right p-relative hover-text-white d-inline-block text-uppercase tp-text-grey-5 lh-1 fs-15 fw-800 tp-ff-dm"
                             style="background: #97005d;">
                               <span class="mr10 td-text d-inline-block mr-5" >Get Quote</span>
                               <span class="tp-arrow-angle">
@@ -365,7 +397,7 @@
                            <h1 class="tp-hero-md-title tp-ff-familjen fs-92 fs-lg-100 fs-md-80 fs-sm-70 fs-xs-50 tp-text-common-black-5 lh-1 ls-m-3 mb-25 fade-in">Edmonton Cleaning Services You Can <span style="background: linear-gradient(90deg, #ce007f, #63003d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Trust.</span> </h1>
                            <p class="tp-hero-md-para tp-ff-dm fs-24 fs-xl-22 lh-140-per ls-m-3 tp-text-common-black-6 opacity-8 mb-45 fade-in">We help Edmonton homeowners and businesses reclaim <br>their space with practical, stress-free cleaning solutions.</p>
                            <div class="tp-hero-md-btn d-flex align-items-center fade-in" >
-                              <a href="contact-light.html" class="tp-btn-md tp-bg-theme-1 tp-left-right p-relative hover-text-white d-inline-block tp-text-grey-5 lh-1 fs-16 fw-700 tp-ff-dm" style="background: linear-gradient(90deg, #ce007f, #63003d);">
+                              <a href="contact-us.html" class="tp-btn-md tp-bg-theme-1 tp-left-right p-relative hover-text-white d-inline-block tp-text-grey-5 lh-1 fs-16 fw-700 tp-ff-dm" style="background: linear-gradient(90deg, #ce007f, #63003d);">
                                  <span class="mr10 td-text d-inline-block mr-5" >Get Quote</span>
                                  <span class="tp-arrow-angle">
                                     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -432,7 +464,7 @@
                         <div class="tp-service-md-item-wrap ml-50">
                            <div class="row gx-30">
                               <div class="col-lg-6 col-md-6 fade-in" >
-                                 <a href="services-page-residential.html">
+                                 <a href="services/residential-cleaning.html">
                                  <div  class="tp-service-md-item tp-bg-common-white tpshake-wrap mb-50" style="border: 2px solid#c7c7c7; ">
 
                                     <span class="tp-service-md-icon tpshake d-inline-block mb-45">
@@ -464,7 +496,7 @@
                                  </a>
                               </div>
                               <div class="col-lg-6 col-md-6 fade-in" >
-                                 <a href="services-page-home-organization.html">
+                                 <a href="services/home-organization.html">
                                  <div class="tp-service-md-item tpshake-wrap tp-bg-common-white mb-50" style="border: 2px solid#c7c7c7; ">
                                     <span class="tp-service-md-icon tpshake d-inline-block mb-45">
                                        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -493,7 +525,7 @@
                                  </a>
                               </div>
                               <div class="col-lg-6 col-md-6 fade-in">
-                                 <a href="services-page-commercial.html">
+                                 <a href="services/commercial-cleaning.html">
                                  <div class="tp-service-md-item tpshake-wrap tp-bg-common-white mb-50" style="border: 2px solid#c7c7c7; ">
                                     <span class="tp-service-md-icon tpshake d-inline-block mb-45">
                                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -512,7 +544,7 @@
                                     </span>
                                     <h3 class="tp-service-md-title tp-ff-familjen fw-500 fs-42 ls-m-4 tp-text-common-black-5 mb-15"><div  class="underline-black" style="color: #3b0024;">Commercial Cleaning</div></h3>
                                     <p class="tp-service-md-text tp-ff-dm fs-18 lh-160-per ls-m-3 tp-text-common-black-6 opacity-8 mb-35">Professional cleaning services that support a clean, safe, and productive environment for your business.</p>
-                                    <div href="service-details-2-light.html" class="tp-service-md-btn text-uppercase tp-left-right hover-text-black d-inline-block tp-text-common-black-5 lh-1 fs-16 fw-800 tp-ff-dm">
+                                    <div  class="tp-service-md-btn text-uppercase tp-left-right hover-text-black d-inline-block tp-text-common-black-5 lh-1 fs-16 fw-800 tp-ff-dm">
                                        <span class="td-text d-inline-block mr-5">Read More</span>
                                        <span class="tp-arrow-angle">
                                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -525,6 +557,7 @@
                                  </a>
                               </div>
                               <div class="col-lg-6 col-md-6 fade-in">
+                                 <a href="services/post-construction-cleaning.html">
                                  <div class="tp-service-md-item tpshake-wrap tp-bg-common-white mb-50" style="border: 2px solid#c7c7c7; " >
                                     <span class="tp-service-md-icon tpshake d-inline-block mb-45">
                                        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -544,7 +577,7 @@
                                     </span>
                                     <h3 class="tp-service-md-title tp-ff-familjen fw-500 fs-42 ls-m-4 tp-text-common-black-5 mb-15"><a href="services-page-industrial.html" class="underline-black" style="color: #3b0024;">Post-Construction/Post-Renovation</a></h3>
                                     <p class="tp-service-md-text tp-ff-dm fs-18 lh-160-per ls-m-3 tp-text-common-black-6 opacity-8 mb-35">Our post-construction and post-renovation cleaning service is designed to make your space move-in ready, safe, and spotless.</p>
-                                    <a href="service-details-2-light.html" class="tp-service-md-btn text-uppercase tp-left-right hover-text-black d-inline-block tp-text-common-black-5 lh-1 fs-16 fw-800 tp-ff-dm">
+                                    <div class="tp-service-md-btn text-uppercase tp-left-right hover-text-black d-inline-block tp-text-common-black-5 lh-1 fs-16 fw-800 tp-ff-dm">
                                        <span class="td-text d-inline-block mr-5">Read More</span>
                                        <span class="tp-arrow-angle">
                                           <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -552,9 +585,10 @@
                                              <path d="M1 11L12 1M12 1H3.44444M12 1V8.77778" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                                           </svg>
                                        </span>
-                                    </a>
+                                    </div>
                                  </div>
                               </div>
+                              </a>
                            </div>
                         </div>
                      </div>
@@ -1200,6 +1234,9 @@
                                        <input class="tp-input" type="text" id="sqft" placeholder="Square Footage (Optional)">
                                        <div class="error-message" id="page1Error">Please select both bedrooms and bathrooms to continue.</div>
                                     </div>
+                                    <div class="form-section">
+                                       <textarea class="tp-input tp-textarea" id="notes" placeholder="Tell us a bit about the job... (Any special requirements or areas of focus?)"></textarea>
+                                 </div>
 
                                     <div class="button-group">
                                        <button type="button" class="tp-btn-md" id="page1NextBtn" style="color: #f0f0f0;">
@@ -1210,6 +1247,7 @@
                                        </button>
                                     </div>
                                  </div>
+
 
                                  <!-- PAGE 2: Frequency & Add-ons -->
                                  <div class="form-page" id="page2">
@@ -1251,6 +1289,10 @@
                                                 <label for="carpet">Carpet Cleaning </label>
                                              </div>
                                              <div class="checkbox-option">
+                                                <input type="checkbox" id="Upholstery" value="75">
+                                                <label for="Upholstery">Upholstery Cleaning </label>
+                                             </div>
+                                             <div class="checkbox-option">
                                                 <input type="checkbox" id="carpet" value="150">
                                                 <label for="carpet">Top to Bottom Wall Cleaning </label>
                                              </div>
@@ -1270,8 +1312,8 @@
                                     </div>
 
                                     <!-- Quote Display -->
-                                    <div class="quote-display" style="opacity: 0;">
-                                       <h3>Your Current Quote</h3>
+                                    <div class="quote-display" >
+                                       <h3>Your Current Estimate</h3>
                                        <div class="quote-amount" id="quoteAmount" style="font-family: Poppins;">$0</div>
                                        <div class="quote-details" id="quoteDetails">Select your options above to calculate</div>
                                     </div>
@@ -1332,9 +1374,7 @@
                                     </div>
 
                                     <!-- Additional Notes -->
-                                    <div class="form-section">
-                                       <textarea class="tp-input tp-textarea" id="notes" placeholder="Tell us a bit about the job... (Any special requirements or areas of focus?)"></textarea>
-                                    </div>
+
 
                                     <div class="button-group">
                                        <button type="button" class="tp-btn-md secondary" id="page3BackBtn">

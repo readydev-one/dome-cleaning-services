@@ -37,7 +37,7 @@
 
             const sqft = parseInt(document.getElementById('sqft').value) || 0;
             if (sqft > 2000) {
-                total += (sqft - 2000) * 0.05;
+                total += (sqft - 2000) * 0.07;
             }
 
             const addons = document.querySelectorAll('.checkbox-option input[type="checkbox"]:checked');
@@ -191,11 +191,23 @@
             quote: calculatedQuote
         };
 
+        //CUSTOMER AUTO REPLY
         emailjs.send(
-            'YOUR_SERVICE_ID',
-            'YOUR_TEMPLATE_ID',
+            'service_p7540ga',
+            'template_j48mqct',
             formData
-        ).then(() => {
+        )
+
+        //ADMIN QUOTE NOTIFICATION
+        .then(() => {
+        return emailjs.send(
+            'service_p7540ga',
+            'template_g79ovtp',
+            formData
+        );
+        })
+        
+        .then(() => {
 
             // Save for thank-you page
             sessionStorage.setItem('quoteData', JSON.stringify(formData));
