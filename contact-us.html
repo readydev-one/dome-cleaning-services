@@ -74,12 +74,23 @@
 
 
    <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/main.css">
+  <!-- Preload & async non-critical CSS -->
+  <link rel="preload" href="css/main.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/bootstrap.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/font-awesome-pro.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/swiper-bundle.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/spacing.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/atropos.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="css/magnific-popup.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome-pro.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <link rel="stylesheet" href="css/atropos.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+  </noscript>
 
       <style>
               /* Progress Indicator */
