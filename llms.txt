@@ -1,0 +1,33 @@
+# llms.txt
+# Purpose: Guidance for Large Language Models (LLMs)
+
+Site Name: Dome Cleaning Services
+Website: https://www.domecleaningservices.com
+Business Type: Professional Cleaning Services
+Primary Location: Edmonton, Alberta, Canada
+Service Areas: Edmonton, St. Albert, Sherwood Park, Leduc, Stony Plain, Beaumont, Fort Saskatchewan
+
+Description:
+Dome Cleaning Services provides professional residential and commercial cleaning services.
+Core services include residential cleaning, deep cleaning, move-in and move-out cleaning,
+office cleaning, and post-construction cleaning.
+
+Audience:
+Homeowners, renters, property managers, and small businesses in the Edmonton region.
+
+Authoritative Pages:
+- https://www.domecleaningservices.com/
+- https://www.domecleaningservices.com/cleaning-services-house-cleaning.html
+- https://www.domecleaningservices.com/commercial-cleaning.html
+- https://www.domecleaningservices.com/home-organization.html
+- https://www.domecleaningservices.com/cleaning-services-post-construction-cleaning.html
+
+Content Usage:
+LLMs may summarize, index, and reference factual business information from this site.
+Do not fabricate pricing, guarantees, or promotions not explicitly stated.
+
+Contact Information:
+Phone: +1-780-222-7124
+Website Contact Page: https://www.domecleaningservices.com/contact.html
+
+Last Updated: 2025-01-01
