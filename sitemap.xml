@@ -68,11 +68,11 @@
   </url> -->
 
   <!-- Blog (optional) -->
-  <!-- <url>
+  <url>
     <loc>https://www.domecleaningservices.com/blogs/</loc>
     <lastmod>2025-12-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url> -->
+  </url>
 
 </urlset>
